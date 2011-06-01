@@ -1,0 +1,31 @@
+{ "author" : 
+  { "email" : "DrTom@schank.ch"
+  , "name" : "Thomas Schank"
+  , "url" : "http://Dr.Th.Schank.ch/"
+  } 
+, "bin" : 
+  { "riakmrq" : "./bin/riakmrq"
+  } 
+, "dependencies" : 
+  { "drtoms-nodehelpers" : "*"
+  , "underscore" : "*"
+  , "coffeescript" : "*"
+  } 
+, "description" : "prototype riak MapReduce queries efficiently"
+, "directories" : 
+  { "bin" : "./bin"
+  , "lib" : "./lib"
+  } 
+, "engines" : 
+  [ "node >=0.4.0"
+  ] 
+, "main" : "./lib/riakmrq"
+, "name" : "riakmrq"
+, "tags" : 
+  [ "riak"
+  , "MapReduce"
+  , "JavaScript"
+  , "CoffeeScript"
+  ] 
+, "version" : "0.0.1"
+} 
