@@ -8,8 +8,9 @@
   } 
 , "dependencies" : 
   { "drtoms-nodehelpers" : "*"
-  , "underscore" : "*"
   , "coffee-script" : "*"
+  , "request" : "*"
+  , "underscore" : "*"
   } 
 , "description" : "A utility to prototype riak MapReduce queries efficiently with coffescript."
 , "directories" : 
@@ -27,5 +28,5 @@
   , "JavaScript"
   , "CoffeeScript"
   ] 
-, "version" : "0.0.3"
+, "version" : "0.0.4"
 } 
