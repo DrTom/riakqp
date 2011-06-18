@@ -1,0 +1,11 @@
+{ "inputs" : "goog"
+, "query" :
+  [
+    { "map" :
+      { "language" : "javascript"
+      , "source_file" : "map.coffee"
+      , "keep" : true
+      }
+    }
+  ]
+}

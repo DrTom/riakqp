@@ -4,4 +4,4 @@ var fs, lib, path;
 path = require('path');
 fs = require('fs');
 lib = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
-require(lib + '/riakmpr').run();
+require(lib + '/riakqp').run();

@@ -1,0 +1,17 @@
+{ "inputs" : "alice"
+, "query" : 
+  [ 
+    { "map" : 
+      { "language" : "javascript"
+      , "source_file" : "word_map.coffee"
+      } 
+    } 
+  , 
+    { "reduce" : 
+      { "language" : "javascript"
+      , "source_file" : "reduce_word_count.coffee"
+      , "keep" : true
+      } 
+    } 
+  ] 
+} 

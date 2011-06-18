@@ -26,12 +26,4 @@ task 'continuous-build', '', () ->
 
   spawnWithOutput 'coffee', ['-w','--bare','-o','.','-c', 'src/']
 
-task 'test','run the test suite', () ->
-
-  exec 'nodeunit test/lib/',  (err,stdout,stderr) ->
-    util.print stdout
-    util.print stderr
-    
- 
- 
 

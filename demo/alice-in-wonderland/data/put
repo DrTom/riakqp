@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for F in *.txt; do
+  echo -e "\nPutting $F"
+  curl -v -X PUT "127.0.0.1:8091/riak/alice/${F}" -H 'Content-type: text/plain' --data-binary @"${F}"
+done

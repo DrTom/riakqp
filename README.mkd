@@ -1,0 +1,26 @@
+riakqp - Riak Query Prototyping in CoffeeScript
+===============================================
+
+_riakqp_ is a utility to prototype riak MapReduce queries efficiently
+in CoffeScript syntax. 
+
+Install
+-------
+
+1. Get [node](http://nodejs.org/) and [npm](http://npmjs.org/).
+2. Execute `npm install -g riakqp`.
+
+Usage
+-----
+
+Have a look at my post [riakqp - Riak Query Prototyping in CoffeeScript](http://dr.th.schank.ch/blog/post/sop4).
+
+
+Limits
+------
+
+_riakqp_ is for prototyping. It will store the complete response
+withing memory before sending it to _stdout_ . It is therefore not
+suitable for receiving huge data-sets. Use the option `-s` to get
+an complete inline query which you can pipe to _curl_ e.g.
+

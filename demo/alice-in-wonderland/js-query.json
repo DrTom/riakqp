@@ -1,0 +1,17 @@
+{ "inputs" : "alice"
+, "query" : 
+  [ 
+    { "map" : 
+      { "language" : "javascript"
+      , "source" : "(function(v) { var freq; freq = {}; (v.values[0].data.toLowerCase().match(/\\w+/g)).forEach(function(w) { var _ref; return freq[w] = ((_ref = freq[w]) != null ? _ref : 0) + 1; }); return [freq];}) "
+      } 
+    } 
+  , 
+    { "reduce" : 
+      { "language" : "javascript"
+      , "keep" : true
+      , "source" : "(function(v) { var freq, sortwords; sortwords = function(obj) { var key, keys, sorted, value, _i, _len; sorted = {}; keys = (function() { var _results; _results = []; for (key in obj) { value = obj[key]; _results.push(key); } return _results; })(); keys.sort(); for (_i = 0, _len = keys.length; _i < _len; _i++) { key = keys[_i]; sorted[key] = obj[key]; } return sorted; }; freq = {}; v.forEach(function(wordcount) { var count, word, _ref, _results; _results = []; for (word in wordcount) { count = wordcount[word]; _results.push(freq[word] = ((_ref = freq[word]) != null ? _ref : 0) + count); } return _results; }); return [sortwords(freq)];}) "
+      } 
+    } 
+  ] 
+} 
