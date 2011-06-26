@@ -11,6 +11,8 @@
 
   freq = {}
   v.forEach (wordcount)  ->
+    # this would be the correct version; albeit it doesn't run on riak at this time; remove the 'own' keyword
+    # for own word, count of wordcount
     for word, count of wordcount
       freq[word] = (freq[word] ? 0) + count
   [sortwords(freq)]
